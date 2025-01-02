@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script Básico - Tutorial do FiveM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Tutorial Básico - Script FiveM</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="tutorial" class="section">
+        <h2>Como Criar um Script Básico para o FiveM</h2>
+        <p>Esse tutorial irá te ensinar a criar um script básico para o FiveM, personalizando funcionalidades no servidor. Vamos aos passos:</p>
+
+        <h3>Passo 1: Criando o Script</h3>
+        <p>Primeiro, crie um arquivo com o nome "meu_script.lua" em sua pasta de scripts no servidor FiveM.</p>
+        <pre><code>-- meu_script.lua
+print("Olá, FiveM!")</code></pre>
+
+        <h3>Passo 2: Adicionando o Script ao Servidor</h3>
+        <p>Coloque o script dentro da pasta <code>resources</code> do seu servidor FiveM e adicione ao arquivo <code>server.cfg</code> com o seguinte comando:</p>
+        <pre><code>start meu_script</code></pre>
+
+        <h3>Passo 3: Testando o Script</h3>
+        <p>Agora, inicie o servidor e verifique no console se a mensagem "Olá, FiveM!" aparece. Isso indica que o script foi carregado corretamente.</p>
+
+        <h3>Passo 4: Expansão do Script</h3>
+        <p>Você pode adicionar mais funcionalidades ao script, como interações com o jogador ou eventos. Exemplo:</p>
+        <pre><code>-- meu_script.lua
+AddEventHandler('playerConnecting', function(playerName, setKickReason, deferrals)
+    print(playerName .. " está se conectando!")
+end)</code></pre>
+
+        <h3>Vídeo Tutorial</h3>
+        <p>Assista ao vídeo abaixo para entender melhor como criar um script básico no FiveM:</p>
+        
+        <!-- Incorporando o vídeo do YouTube -->
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ID_DO_VIDEO_AQUI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tutorial FiveM - Todos os direitos reservados</p>
+    </footer>
+
+</body>
+</html>
